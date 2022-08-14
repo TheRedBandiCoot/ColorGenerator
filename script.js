@@ -27,5 +27,8 @@ function colorGenerator() {
     return `#${colorToHex(red)}${colorToHex(green)}${colorToHex(blue)}`;
   }
   p.innerText = rgbColor(red, green, blue);
-  navigator.clipboard.writeText(p.innerText);
+  navigator.clipboard
+    .writeText(p.innerText)
+    .then(() => alert(p.innerText + ' copied'))
+    .catch((err) => console.log(err));
 }
