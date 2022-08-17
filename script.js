@@ -7,7 +7,7 @@ document.body.style.display = container.style.display = button.style.display = '
 document.body.style.justifyContent = container.style.justifyContent = button.style.justifyContent = 'center';
 document.body.style.alignItems = container.style.alignItems = button.style.alignItems = 'center';
 
-// * Add Click Event to this button
+// *** Add Click Event to this button
 button.addEventListener('click', colorGenerator);
 window.addEventListener('keydown', (e) => {
   if (e.key === ' ') {
@@ -15,7 +15,7 @@ window.addEventListener('keydown', (e) => {
   }
 });
 
-//@ Call Function Globally for Generating random color on Page load
+//@ Call Function Globally for Generating random colors on Page load
 colorGenerator();
 
 // *** Creating the Generating Colors Logic With Function
